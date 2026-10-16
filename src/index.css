@@ -1,0 +1,32 @@
+
+:root {
+   --bg: #e8ecf1;
+   --surface: #f7f9fb;
+   --ink: #1b2440;
+   --muted: #55607e;
+   --line: #c9d1dd;
+   --accent: #2f5df0;
+
+   --font-ui: 'Bricolage Grotesque Variable', system-ui, sans-serif;
+   --font-text: 'Newsreader Variable', Georgia, serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
